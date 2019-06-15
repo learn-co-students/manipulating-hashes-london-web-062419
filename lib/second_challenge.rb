@@ -7,7 +7,7 @@ def second_challenge
   }
 
   #code your solution here!
-
+groceries.values.flatten #same as when I used to flatten json data in sql.
   
 
 end

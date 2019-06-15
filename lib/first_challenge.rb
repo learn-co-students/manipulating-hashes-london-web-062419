@@ -1,3 +1,6 @@
+
+
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -15,7 +18,15 @@ def first_challenge
 
   #your code here
 
+contacts.each do |person, data| #iterate the name and data of each person
+  data.each do |attribute, value| #iterate on the data of each person
 
+    if attribute==:favorite_icecream_flavors
+      value.delete_if {|flavor| flavor =="strawberry"} 
+    
+  end
+end
+end
   #remember to return your newly altered contacts hash!
   contacts
 end
