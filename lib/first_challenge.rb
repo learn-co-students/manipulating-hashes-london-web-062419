@@ -1,4 +1,5 @@
-def first_challenge
+
+  def first_challenge
   contacts = {
     "Jon Snow" => {
       name: "Jon",
@@ -13,10 +14,22 @@ def first_challenge
     }
   }
 
+
+
+  #access contacts, iterate over each contact and their data
+  contacts.each do |person, data|
+    data.each do |attribute, value|
+  if attribute == :favorite_icecream_flavors 
+    value.delete_if {|flavor| flavor == "strawberry"} 
+    end
+  end
+end
+
+
   #your code here
 
 
   #remember to return your newly altered contacts hash!
   contacts
-end
 
+end
